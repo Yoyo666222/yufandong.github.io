@@ -23,7 +23,7 @@ repository               : "yufandong.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/profile.png"
+  avatar           : "images/profile.png"
   name             : "Yufan"
   pronouns         : "she/her"  
   bio              : "A neuroscience explorer in REM sleep and cognition"
