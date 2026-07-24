@@ -8,5 +8,8 @@ main:
   - title: "Presentations"
     url: /talks/
 
+  - title: "Photos & Life"
+    url: /photos-life/
+
   - title: "CV"
     url: /cv/

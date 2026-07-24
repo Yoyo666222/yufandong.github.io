@@ -1,11 +1,25 @@
 ---
 permalink: /
 title:
-author_profile: true
+author_profile: false
+centered: true
 redirect_from:
   - /about/
   - /about.html
 ---
+<section class="profile-identity">
+  <img src="{{ '/images/profile.webp' | relative_url }}" alt="Portrait of Yufan Dong">
+  <p class="profile-kicker">Yufan Dong &middot; she/her</p>
+  <p class="profile-identity__bio">Neuroscientist exploring REM sleep, cortical dynamics, cognition, and consciousness.</p>
+  <p class="profile-identity__meta">Institute of Neuroscience, Chinese Academy of Sciences &middot; Shanghai, China</p>
+  <div class="profile-actions">
+    <a class="profile-button" href="mailto:yfdong2020@ion.ac.cn">Email</a>
+    <a class="profile-button" href="https://scholar.google.com/citations?hl=en&user=P84PFIsAAAAJ">Google Scholar</a>
+    <a class="profile-button" href="https://orcid.org/0000-0003-3417-8870">ORCID</a>
+    <a class="profile-button" href="https://github.com/Yoyo666222">GitHub</a>
+  </div>
+</section>
+
 
 <section class="profile-hero">
   <p class="profile-eyebrow">NEUROSCIENCE · SLEEP · COGNITION</p>
@@ -38,6 +52,12 @@ redirect_from:
 <section class="profile-section">
   <div class="profile-section__heading"><p class="profile-kicker">Recognition</p><h2>Awards & honors</h2></div>
   <div class="award-strip"><div><strong>2024</strong><span>Ray Wu Prize</span></div><div><strong>2024</strong><span>CAS President Award</span></div><div><strong>2017 · 2022</strong><span>National Scholarship</span></div><div><strong>2019</strong><span>iGEM Gold Medal</span></div></div>
+</section>
+
+<section class="profile-section profile-section--life">
+  <div class="profile-section__heading"><p class="profile-kicker">Beyond the lab</p><h2>Photos &amp; Life</h2></div>
+  <p>A place for moments from conferences, travel, daily life, and the people who make the journey memorable.</p>
+  <a class="profile-text-link" href="{{ '/photos-life/' | relative_url }}">Visit Photos &amp; Life <span aria-hidden="true">&rarr;</span></a>
 </section>
 
 <section class="profile-contact"><p class="profile-kicker">Contact</p><h2>Interested in sleep, cortical dynamics, or consciousness?</h2><p>I welcome conversations about research and collaboration.</p><a href="mailto:yfdong2020@ion.ac.cn">yfdong2020@ion.ac.cn</a></section>

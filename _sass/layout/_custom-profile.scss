@@ -394,3 +394,220 @@ $profile-teal: #1f6f78;
   .timeline-list span,
   .cv-list span { grid-row: auto; }
 }
+
+/* Centered site layout */
+
+.greedy-nav .visible-links {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page--centered {
+  float: none;
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
+  text-align: center;
+}
+
+.page--centered .page__inner-wrap,
+.page--centered .page__content {
+  float: none;
+  width: 100%;
+}
+
+.page--centered .page__title,
+.page--centered .page__content > h2,
+.page--centered .profile-section__heading,
+.page--centered .research-feature,
+.page--centered .profile-contact {
+  text-align: center;
+}
+
+.page--centered .page-deck,
+.page--centered .profile-intro,
+.page--centered .profile-section--life > p,
+.page--centered .life-gallery__empty > p {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.page--centered .profile-actions,
+.page--centered .skill-cloud {
+  justify-content: center;
+}
+
+.page--centered .research-card,
+.page--centered .selected-work,
+.page--centered .award-strip,
+.page--centered .timeline-list,
+.page--centered .cv-list,
+.page--centered .publication-list {
+  text-align: center;
+}
+
+.page--centered .timeline-list article,
+.page--centered .cv-list article,
+.page--centered .publication-card {
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.page--centered .timeline-list span,
+.page--centered .cv-list span {
+  grid-row: auto;
+}
+
+.page--centered .publication-card__year {
+  margin-bottom: 0.25rem;
+}
+
+.profile-identity {
+  max-width: 760px;
+  margin: 0 auto 2.25rem;
+  text-align: center;
+}
+
+.profile-identity > img {
+  width: clamp(130px, 18vw, 180px);
+  height: clamp(130px, 18vw, 180px);
+  margin-bottom: 1rem;
+  border: 5px solid var(--global-bg-color);
+  border-radius: 50%;
+  box-shadow: 0 12px 32px rgba(22, 63, 73, 0.16);
+  object-fit: cover;
+  object-position: 68% 50%;
+}
+
+.profile-identity__bio {
+  max-width: 650px;
+  margin: 0 auto 0.45rem !important;
+  font-family: $sans-serif;
+  font-size: clamp(1.05rem, 2vw, 1.3rem) !important;
+  line-height: 1.55;
+}
+
+.profile-identity__meta {
+  color: var(--global-text-color-light);
+  font-family: $sans-serif;
+  font-size: 0.9rem !important;
+}
+
+.profile-hero {
+  text-align: center;
+}
+
+.profile-hero h1 {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: clamp(1.25rem, 2.5vw, 2.25rem);
+  line-height: 1.16;
+  letter-spacing: -0.035em;
+}
+
+.profile-hero .profile-intro {
+  max-width: 720px;
+}
+
+.profile-section--life {
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid var(--global-border-color);
+  border-radius: 20px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--global-bg-color) 92%, #f1d6c9), color-mix(in srgb, var(--global-bg-color) 94%, #d6ece8));
+}
+
+.profile-section--life > p {
+  max-width: 650px;
+  font-family: $sans-serif;
+}
+
+.life-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.life-photo {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 18px;
+  background: var(--global-bg-color);
+  text-align: center;
+}
+
+.life-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.life-photo figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 1.1rem;
+  font-family: $sans-serif;
+}
+
+.life-photo figcaption strong {
+  font-size: 1rem;
+}
+
+.life-photo figcaption span {
+  color: $profile-accent;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.life-photo figcaption p {
+  margin: 0 !important;
+  color: var(--global-text-color-light);
+  font-size: 0.85rem !important;
+}
+
+.life-gallery__empty {
+  grid-column: 1 / -1;
+  padding: clamp(2.5rem, 7vw, 5rem) 1.5rem;
+  border: 1px dashed var(--global-dark-border-color);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--global-bg-color) 95%, #d6ece8);
+}
+
+.life-gallery__empty > span {
+  color: $profile-accent;
+  font-size: 2rem;
+}
+
+.life-gallery__empty h2 {
+  margin: 0.8rem 0;
+  padding: 0;
+  border: 0;
+}
+
+.life-gallery__empty > p {
+  max-width: 620px;
+}
+
+.life-gallery:has(.life-photo) .life-gallery__empty {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .page--centered {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .life-gallery {
+    grid-template-columns: 1fr;
+  }
+}

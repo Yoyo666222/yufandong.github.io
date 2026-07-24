@@ -2,7 +2,8 @@
 layout: single
 title: "Research"
 permalink: /research/
-author_profile: true
+author_profile: false
+centered: true
 ---
 
 <p class="page-deck">I study how coordinated activity across the cortex creates distinct brain states—and what REM sleep can reveal about cognition and consciousness.</p>
