@@ -1,36 +1,21 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p class="page-deck">Work spanning REM sleep, cortex-wide dynamics, circadian biology, Prader–Willi syndrome, and sensory hypersensitivity.</p>
 
-{% include base_path %}
+<p class="profile-actions"><a class="profile-button" href="{{ site.author.googlescholar }}">Google Scholar</a><a class="profile-button" href="{{ site.author.orcid }}">ORCID</a></p>
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<div class="publication-list">
+  <article class="publication-card publication-card--featured"><div class="publication-card__year">2025</div><div><p class="publication-card__type">Review · Trends in Neurosciences</p><h2><a href="https://doi.org/10.1016/j.tins.2025.10.008">Cracking the complexity of REM sleep</a></h2><p><strong>Yufan Dong</strong> and Danqian Liu</p><p class="publication-card__detail">48(12), 977–993</p></div></article>
+  <article class="publication-card"><div class="publication-card__year">2024</div><div><p class="publication-card__type">Research Article · iScience</p><h2><a href="https://doi.org/10.1016/j.isci.2024.109974">Deficiency in Prader-Willi syndrome gene necdin leads to attenuated cardiac contractility</a></h2><p><strong>Yufan Dong</strong>, Renbin Lu, Hui Cao, Jing Zhang, Xiushan Wu, Yun Deng, and Jia-Da Li</p><p class="publication-card__detail">27(6), 109974</p></div></article>
+  <article class="publication-card"><div class="publication-card__year">2023</div><div><p class="publication-card__type">Spotlight · Trends in Neurosciences</p><h2><a href="https://doi.org/10.1016/j.tins.2023.04.006">Awakening from anesthesia switches cortical wave modes</a></h2><p><strong>Yufan Dong</strong> and Danqian Liu</p><p class="publication-card__detail">46(7), 503–504</p></div></article>
+  <article class="publication-card publication-card--featured"><div class="publication-card__year">2022</div><div><p class="publication-card__type">Research Article · Nature Neuroscience</p><h2><a href="https://doi.org/10.1038/s41593-022-01195-2">Cortical regulation of two-stage rapid eye movement sleep</a></h2><p><strong>Yufan Dong</strong>, Jiaqi Li, Min Zhou, Yihui Du, and Danqian Liu</p><p class="publication-card__detail">25, 1675–1682</p></div></article>
+  <article class="publication-card"><div class="publication-card__year">2020</div><div><p class="publication-card__type">Research Article · Nucleic Acids Research</p><h2><a href="https://doi.org/10.1093/nar/gkaa601">Necdin regulates BMAL1 stability and circadian clock through SGT1-HSP90 chaperone machinery</a></h2><p>Renbin Lu, <strong>Yufan Dong</strong>, and Jia-Da Li</p><p class="publication-card__detail">48(14), 7944–7957</p></div></article>
+  <article class="publication-card"><div class="publication-card__year">2020</div><div><p class="publication-card__type">Research Article · Neuropharmacology</p><h2><a href="https://www.sciencedirect.com/science/article/pii/S002839081930382X">Hyperactive Akt-mTOR pathway as a therapeutic target for pain hypersensitivity in Cntnap2-deficient mice</a></h2><p>Xiaoliang Xing, Kunyang Wu, <strong>Yufan Dong</strong>, Yimei Zhou, Jing Zhang, Fang Jiang, Wang-Ping Hu, and Jia-Da Li</p><p class="publication-card__detail">165, 107816</p></div></article>
+</div>
 
-
-
+<div class="research-feature research-feature--compact"><p class="profile-kicker">In preparation</p><h2>Orchestrating REM sleep with eye movements</h2><p><strong>Yufan Dong</strong> and Danqian Liu</p></div>
